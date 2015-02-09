@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RELLENA TU FOLRMULARIO</title>
+</head>
+<body>
+
+<h1>RELLENA TU FOLRMULARIO</h1>
+
+<form action="http://192.168.1.65/dam-2015/XHTML/post.php" method="get" >
+
+<fieldset>
+	<legend>Datos personales</legend>
+
+<label for="nombre">Nombre</label>
+<br>
+<input type="text" name="Nombre" id="nombre">
+<br>
+
+
+<label>Apellidos</label>
+<br>
+<input type="text" name="Apellidos">
+<br>
+
+<label>Contrasenya</label>
+<br>
+<input type="password" name="Contrasenya">
+<br>
+
+<label>DNI</label>
+<br>
+<input type="text" name="DNI">
+<br>
+
+<label>Sexo</label>
+<br>
+<input type="radio" value="Hombre" name="sexo" checked><label>Hombre</label>
+<br>
+<input type="radio" value="Mujer" name="sexo"><label>Mujer</label>
+
+
+</fieldset>
+
+
+
+<fieldset>
+	<legend>Otros datos	</legend>
+
+<br>
+<label>Incluir mi foto</label>
+<input type="file" name="Foto">
+<br>
+
+
+<br>
+
+<input type="checkbox" checked="" id="select">
+<label for="select">Subscribirme al boletin</label>
+<br>
+
+
+
+
+</fieldset>
+
+
+<fieldset>
+	<legend>Seleccion</legend>
+
+<select name="SO" id="so" >
+<option value="1" selected="selected">Windows</option>
+<option value="2">Ubuntu</option>
+<option value="3">Linux</option>
+<option value="4">otro 4</option>
+<option value="5">otro 5</option>
+<option value="6">otro 6</option>
+<option value="7">otro 7</option>
+</select>
+
+
+
+<select name="SO2" id="so2" size="3">
+<option value="1" selected="selected">Windows</option>
+<option value="2">Ubuntu</option>
+<option value="3">Linux</option>
+<option value="4">otro 4</option>
+<option value="5">otro 5</option>
+<option value="6">otro 6</option>
+<option value="7">otro 7</option>
+</select>
+
+
+
+<!--para que no machaque los valores multiples, sino lo machaca el servidor 
+se crean arrays de variables. -->
+<select name="SO3[]" id="so3" multiple >
+<option value="1" selected="selected">Windows</option>
+<option value="2">Ubuntu</option>
+<option value="3">Linux</option>
+<option value="4">otro 4</option>
+<option value="5">otro 5</option>
+<option value="6">otro 6</option>
+<option value="7">otro 7</option>
+</select>
+
+
+
+
+
+
+</fieldset>
+
+<input type="submit" id="boton"  name="Guardarcambios">
+
+<input type="reset"   name="Borrarlos cambios introducidos">
+
+<br>
+
+
+
+</form>
+
+
+
+
+</body>
+</html>

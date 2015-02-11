@@ -1,0 +1,52 @@
+/* poner el clearfix  */
+
+.clearfix:before,
+.clearfix:after{
+content: "";
+display: table;
+}
+
+.clearfix:after{
+clear: both;
+}
+
+.clearfix{
+	zoom:1;
+}
+
+ul {
+
+margin: 0;
+padding: 0;
+list-style: none;}
+
+
+.menu {	
+/*background-color: #AAA; */
+}
+
+/*hijos directos */
+.menu > li {
+	float: left;
+	border:1px solid  #eee;
+	padding: 5px 10px ;
+	position: relative;
+
+}
+
+.submenu{
+display: none;
+position: absolute;
+border: 1px solid #FFF;
+top: 100%;
+left: -1px;
+}
+
+.menu > li:hover   .submenu{
+display: block;
+
+}
+
+
+
+

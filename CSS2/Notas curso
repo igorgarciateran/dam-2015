@@ -1,2 +1,5 @@
 Se baja una hoja de estilos para normalizar la apariencia en todos los navegadores.
 
+
+Los estilos de las fuentes, colores, etc... se heredan. Por lo tanto esta bien declararlo al wrapper y si hay que cambiar algo que sea algo puntual.
+

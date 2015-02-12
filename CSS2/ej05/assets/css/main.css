@@ -1,0 +1,234 @@
+body {
+	font: 400 9pt/1.6em Arial,helvetica,sans-serif;
+}
+h1 , ul ,ol {margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a,
+a:visited,
+a:link,
+a:active{
+text-decoration: none;
+border-bottom: 1px dotted transparent;
+
+}
+
+h1 {
+	font-size: 1em;
+	margin-bottom:  :2em;
+}
+
+
+#cabecera p {
+				margin-top: 2em;
+				margin-bottom: 2em;
+}
+
+.wrapper{	
+margin:0 auto;
+width: 960px;
+}
+
+#cabecera{
+background-color: black;
+color: white;
+padding: 25px 10px;
+text-align: center;
+}
+
+#cabecera a, 
+#cabecera a:visited,
+#cabecera a:link ,
+#cabecera a:active {
+color: white;
+border-color:  #eee;
+
+}
+
+.menu li {
+display: inline;
+margin-right: 0.5em;
+margin-left: 0.5em
+}
+.menu {
+text-transform: lowercase;
+}
+
+.articulo {
+
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.h2{
+font-size: 1.2em;
+display: block;
+color: #000;
+
+}
+
+.articulo .h2 {
+margin-bottom: 0.2em;
+}
+
+.articulo .h2 a {
+color #000;
+border-color: #00E;
+}
+
+.fleft{
+float: left;
+}
+
+.fright{
+float: right;
+}
+
+.date{
+border-color: black;
+}
+
+.articulo a {
+border-color: black;
+}
+
+
+#cuerpo ul{
+margin-left: 4em;
+}
+
+#cuerpo li{		
+
+
+}
+
+.oscurecido{
+font-weight: 700;
+}
+
+.articulo a,
+.articulo a:hover ,
+.articulo a:link,
+.articulo a:visited{
+
+border-color: #00E;}
+
+
+.dia {
+display: inline-block;
+width: 20px	;
+text-align: right;
+margin-left: 10px;
+}
+
+.footer {
+
+text-align: center;
+
+}
+
+
+.negrita{
+font-weight: 700;
+background-color: #FFA;
+}
+
+
+table{
+width: 90%;
+font-size: 1.5em;
+background-color: #FFA;
+border: 0.3em solid #FFA;
+
+}
+
+#cuerpo li {
+margin-top: 1.5em;
+margin-bottom: 1.5em;
+}
+
+td{
+background-color: #FFF;
+}
+
+
+/*.comments img {
+margin: 1em;
+position: relative;
+}*/
+
+.img-responsive{
+max-width: 100%;
+}
+
+.comments .avatar{
+width: 10%
+
+}
+.comments .comentario {
+width: 85%;
+margin-left: 5%;
+}
+
+
+
+#cuerpo span{
+margin: 1.2em ;
+}
+
+
+
+h3{
+font-weight: 700;
+background-color: #FFA;
+
+}
+
+.form input ,
+.form textarea{border: 1px solid #ccc;
+	padding: 5px;
+	width: 50%;
+}
+
+.form .row{
+margin-bottom: 10px;
+}
+
+.form-rows label,
+.forms-rows input,
+.forms-rows textarea {
+display: inline-block;
+margin:5px 0;
+}
+
+.form-inline label {
+display:inline ;
+width: 30%;
+
+}
+
+.form-inline input{
+	display:inline-block;
+	
+}
+
+
+.boton{
+
+background-color: #FFE;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

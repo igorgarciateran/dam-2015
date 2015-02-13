@@ -132,16 +132,16 @@ text-align: center;
 
 .negrita{
 font-weight: 700;
-background-color: #FFA;
+
 }
 
 
 table{
 width: 90%;
 font-size: 1.5em;
-background-color: #FFA;
-border: 0.3em solid #FFA;
-
+background-color: #ccc;
+border: 3px solid #ccc;
+text-align: left;
 }
 
 #cuerpo li {
@@ -151,8 +151,43 @@ margin-bottom: 1.5em;
 
 td{
 background-color: #FFF;
+
 }
 
+
+table th,
+table td {
+	padding: 0.3em;
+
+}
+
+
+table td {
+border-bottom: 1px solid #ccc;
+}
+
+table thead,
+table tfoot {
+	background-color: #ccc;
+}
+
+table tfoot td {	
+background-color: #ccc;
+font-size: 1.5em;
+
+}
+
+.price-th {
+width: 45px	;
+}
+
+.txtright {
+text-align: right;}
+
+
+table thead {
+
+}
 
 /*.comments img {
 margin: 1em;
@@ -221,6 +256,9 @@ background-color: #FFE;
 }
 
 
+table {
+width: 100%;
+}
 
 
 

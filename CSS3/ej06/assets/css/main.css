@@ -1,0 +1,206 @@
+/* --------------------------------
+Site:       Site name
+CSS author: Your name here
+Updated:    Date
+Updated by: Your name here
+-------------------------------- */
+
+/* ----------------------------
+simple reset
+---------------------------- */
+
+html, body, ul, ol, li, form, fieldset, legend
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p { margin-top: 0; }
+fieldset,img { border: 0; }
+legend { color: #000; }
+li { list-style: none; }
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td
+{
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+input, textarea, select
+{
+    font-size: 110%;
+    line-height: 1.1;
+}
+
+abbr, acronym
+{
+    border-bottom: .1em dotted;
+    cursor: help;
+}
+
+body
+{
+    color: #000;
+    background: radial-gradient(#FFF,#eee);
+    font: 90%/1.3 "DejaVu Sans", "URW Gothic L", "Helvetica Neue", Helvetica, Arial, "Microsoft Sans Serif", sans-serif;
+    padding-top: 45px;
+}
+
+.header{
+    background-color: #ccc;
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #bbb;
+    box-shadow: 0 -5px 15px 0px #000;
+
+}
+
+.header h1 {
+    margin: 0px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.container
+{
+    padding: 10px;
+}
+
+.nav
+{
+    background: lime;
+    margin-bottom: 1em;
+}
+
+.nav li{
+    display:inline-block;
+}
+
+.content
+{
+    background: yellow;
+    margin: 1em 0em;
+}
+
+.extras
+{
+    background: gray;
+}
+
+.feature-image
+{
+ display: none;
+
+}
+
+.nav,
+.content,
+.extras {
+background-color: #FFF;
+border: 1px solid #ccc;
+padding: 0.5em;
+}
+
+
+
+@media (min-width: 768px){
+
+.clearfix:before,
+.clearfix:after{
+content: "";
+display: table;
+}
+
+.clearfix:after{
+clear: both;
+}
+
+.clearfix{
+    zoom:1;
+}
+
+    body{
+        padding: 0;
+
+        
+    }
+
+.header{
+    background-color: transparent;
+    position: static;
+    width: 100%;
+    height: auto;
+    border-bottom: none;
+    box-shadow: none;
+
+}
+
+.header h1{
+    margin: 0.5em solid #000;
+
+}
+
+.nav{
+    float: left;
+    width:  15%;
+
+}
+
+.nav li{
+    display:block;
+}
+
+
+.col-dcha{
+float: left;
+width: 78%;
+margin-left: 2%;
+
+}
+
+
+.feature-image
+{
+ float: right;
+ display: block;
+ margin-left: 15px;
+
+
+}
+
+.content{
+margin-top: 0;
+
+}
+
+    }
+/*  deberia ser 992  */
+@media (min-width: 800px){
+
+.content{
+float: left;
+width: 59%;
+}
+
+
+
+.extras{
+float: right;
+width :35%;
+
+
+}
+
+}

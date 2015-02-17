@@ -1,0 +1,81 @@
+body {
+            margin: 0px;
+        }
+        #container{
+            background: #666 url(../img/ej03_tree.jpg) no-repeat -60px 0;
+            width: 420px;
+            height: 480px;
+            position: relative;
+        }
+        .snowflake {
+            color: #fff;
+            font-size: 2em;
+            position: absolute;
+        }
+        .snowflake.f1 {
+            left: 40px;
+            animation-duration: 4s;
+            animation-delay: 0.5s;
+            animation-name: caidacopo;
+            animation-timing-function:linear ;
+        }
+        .snowflake.f2 {
+            font-size: 1.8em;
+            left: 120px;
+            animation-duration: 4s;
+            animation-name: caidacopo;
+            animation-delay: 0.6s;
+            animation-timing-function:linear ;
+        }
+        .snowflake.f3 {
+            left: 200px;
+            animation-duration: 4s;
+            animation-name: caidacopo;
+            animation-delay: 0.1s;
+            animation-timing-function:linear ;
+        }
+        .snowflake.f4 {
+            font-size: 1.5em;
+            left: 280px;
+            
+            animation-duration: 3s;
+            animation-name: caidacopo;
+            animation-delay: 0.4s;
+            animation-timing-function:linear ;
+        }
+
+
+
+        
+        
+@keyframes caidacopo {
+
+    from {
+    
+        top : 0;
+    }
+    10%{
+        top: 7%;
+        transform: translateX(10px) rotate(10deg);
+    }
+       
+    30%{
+        top: 25%;
+        transform: translateX(-10px) rotate(-20deg);
+    }
+
+    40%{
+        top: 42%;
+        transform: translateX(10px) rotate(15deg);
+    }
+
+    50%{
+        top: 51%;
+        transform: translateX(-10px) rotate(-10deg);
+        }
+ 
+    to {
+        top: 100%;
+         transform: translateX(10px) rotate(20deg);
+    }
+}

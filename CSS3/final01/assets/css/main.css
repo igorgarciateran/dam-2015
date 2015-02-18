@@ -32,13 +32,9 @@ body {
    left: 0;
 }
 .view .mask {
-   background-color: rgba(219,127,8, 0.7);
-   
-   opacity: 0;
+   background-color: rgba(219,127,8, 0);
    transition-property: opacity;
    transition-duration: 500ms;
-
-
 }
 .view img {
    display: block;
@@ -98,6 +94,10 @@ body {
 /* ANIMACIONES Y TRANSICIONES */
 
 .view:hover .mask{
+<<<<<<< HEAD
+=======
+
+>>>>>>> 99504e083d8fdaff1af1d33d8c10da227ebf3c88
 opacity: 1;
 }
 
@@ -108,12 +108,20 @@ opacity: 1;
 }
 
 .view:hover h2{
+<<<<<<< HEAD
 transform: translateY(0);
+=======
+transform: translateY(0px);
+>>>>>>> 99504e083d8fdaff1af1d33d8c10da227ebf3c88
 opacity: 1;
 
 }
 
 .view:hover a{
+<<<<<<< HEAD
+=======
+transform: translateY(0px);
+>>>>>>> 99504e083d8fdaff1af1d33d8c10da227ebf3c88
 opacity: 1;
 }
 

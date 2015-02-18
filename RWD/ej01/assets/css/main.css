@@ -1,0 +1,33 @@
+.main well{
+	text-align: center;
+} 
+
+.footer{
+background-color: #222;
+color: white;
+padding: 1.2em 0.5em;
+}
+
+.features .glyphicon{
+	font-size: 3em;
+	color: lime;
+}
+
+.features [class*⁼"col-"]{
+	margin-bottom: 25px;
+}
+
+
+@media (min-width:768px ){
+.main well{
+	text-align: left;
+}
+
+
+.footer[class*="col-sm"]{
+	min-height: 150px;
+}
+
+
+
+}

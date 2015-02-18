@@ -32,7 +32,9 @@ body {
    left: 0;
 }
 .view .mask {
-   background-color: rgba(219,127,8, 0,7);
+   background-color: rgba(219,127,8, 0.7);
+   
+   opacity: 0;
    transition-property: opacity;
    transition-duration: 500ms;
 
@@ -55,6 +57,7 @@ body {
    padding: 10px;
    background: rgba(0, 0, 0, 0.8);
    margin: 20px 0 0 0;
+
    transform: translateY(-100px) ;
    opacity: 0;
    transition-duration: 500ms;
@@ -68,6 +71,11 @@ body {
    color: #fff;
    padding: 10px;
    text-align: center;
+
+   transform: translateY(100px) ;
+   opacity: 0;
+   transition-duration: 500ms;
+   transition-property: all;
 }
 .view a.info {
    display: inline-block;
@@ -79,7 +87,9 @@ body {
    box-shadow: 0 0 1px #000;
    
    opacity: 0;
-   transform: translateY(-100px);
+   transition-duration: 500ms;
+   transition-property: all;
+   
 }
 .view a.info: hover {
    box-shadow: 0 0 5px #000;
@@ -88,24 +98,28 @@ body {
 /* ANIMACIONES Y TRANSICIONES */
 
 .view:hover .mask{
-opacity: 0.7;
+opacity: 1;
 }
 
 
 .view:hover img{
 transform: scale(1.2);
-opacity: 0.5;
+opacity: 1;
 }
 
 .view:hover h2{
-transform: translateY(100px);
+transform: translateY(0);
 opacity: 1;
 
 }
 
 .view:hover a{
-transform: translateY(100px);
 opacity: 1;
+}
+
+.view:hover p{
+   transform: translateY(0) ;
+   opacity: 1 ;
 }
 
 

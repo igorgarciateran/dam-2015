@@ -1,0 +1,60 @@
+.start {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 5em;
+}
+
+#clock {
+    position: relative;
+    width: 378px;
+    height: 378px;
+    background-image: url('../img/clockFace.png');
+    left: 50%;
+    margin: 5em 0 0 -189px;
+}
+
+#clock div {
+    position: absolute;
+}
+
+
+/* ANIMACIONES Y TRANSFORMACIONES */
+#second img{
+
+animation-duration: 1s;
+animation-name: segundero;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+
+}
+
+#minute img{
+animation-duration: 60s; /* 1*60   */
+animation-name: segundero;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+#hour img {
+animation-duration: 3600s; /* 1*60*60 */
+animation-name: segundero;
+animation-timing-function: linear;
+
+}
+
+
+
+@keyframes segundero {
+
+    from {
+     transform: rotate(0deg);
+       
+    }
+   
+ 
+    to {
+        
+         transform: rotate(360deg);
+    }
+}

@@ -32,7 +32,7 @@ body {
    left: 0;
 }
 .view .mask {
-   background-color: rgba(219,127,8, 0,7);
+   background-color: rgba(219,127,8, 0);
    transition-property: opacity;
    transition-duration: 500ms;
 
@@ -88,23 +88,24 @@ body {
 /* ANIMACIONES Y TRANSICIONES */
 
 .view:hover .mask{
-opacity: 0.7;
+
+opacity: 1;
 }
 
 
 .view:hover img{
 transform: scale(1.2);
-opacity: 0.5;
+opacity: 1;
 }
 
 .view:hover h2{
-transform: translateY(100px);
+transform: translateY(0px);
 opacity: 1;
 
 }
 
 .view:hover a{
-transform: translateY(100px);
+transform: translateY(0px);
 opacity: 1;
 }
 

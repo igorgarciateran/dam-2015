@@ -3,7 +3,7 @@
 
         var Validador="/^.@([0-9.\-A-Za-z]+)$/";
 
-        return (email.test(Validador));
+        return (email.test("/^.@([0-9.\-A-Za-z]+)$/"));
     };
 
     console.log(validaremail("igor@gmail.com.com")===false );

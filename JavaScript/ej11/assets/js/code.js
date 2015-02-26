@@ -1,9 +1,8 @@
 window.onload = function() {
 
-		var valida=function(){
-			var elformu=document.getElementByid('registro');
+		var form =document.getElementById('registro');
+			form.validate();
 			
-			};
     
 };
 

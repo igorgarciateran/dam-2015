@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejemplo html5: CONTROL DE VIDEO</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+
+</head>
+
+<body>
+    <div class="wraper">
+        <div class="well">
+            <div class="video col-xs-12">
+                <VIDEO height="400" id="video">
+                    <source src="assets/videos/BMX.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        <source src="assets/videos/BMX.webm" type='video/webm; codecs="vp8, vorbis"'>
+
+                            <p>Your browser doesn’t support video. Please download the video in <a href="leverage-a-synergy.webm">webM</a> or <a href="leverage-a-synergy.mp4">MP4</a> format.
+                            </p>
+
+
+                </VIDEO>
+            </div>
+
+
+            <div class="btn-group col-xs-12">
+                <button type="button" class="btn btn-default " id="abrir">
+                    <span>Abrir </span>
+                </button>
+                <button type="button" id="pausa" class="btn btn-default ">
+                    <span>Pausa </span>
+                </button>
+                <button type="button" id="parar" class="btn btn-default ">
+                    <span>Parar </span>
+                </button>
+                <button type="button" id="avanzar" class="btn btn-default ">
+                    <span>Avanzar </span>
+                </button>
+                <button type="button" id="retroceder" class="btn btn-default ">
+                    <span>retroceder </span>
+                </button>
+                <button type="button" id="inicio" class="btn btn-default ">
+                    <span>Inicio </span>
+                </button>
+                <button type="button" id="fin" class="btn btn-default ">
+                    <span>Fin </span>
+                </button>
+                <button type="button" id="completa" class="btn btn-default ">
+                    <span>Pantalla completa </span>
+                </button>
+
+
+
+
+                <input type="range" id="volumen" min="0" max="100" step="1">
+                <progress id="progreso" min="0" max="100" step="1"></progress>
+
+            </div>
+           
+                <div class="col-xs-12">
+                 <div class="tracklist">
+                    <ul class="list-unstyled">
+                        <li> <span class="glypicon glyphicon-facetime-video"> </span> video1</li>
+                        <li> <span class="glypicon glyphicon-facetime-video"> </span> video2</li>
+                        <li> <span class="glypicon glyphicon-facetime-video"> </span> video3</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>

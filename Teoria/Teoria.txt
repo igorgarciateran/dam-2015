@@ -1,0 +1,28 @@
+ERP = Enterprise Resource Planing
+Gestion de pedidos, almacen, proveedores,etc...
+
+
+CRM = Customer Resource Management
+Gestion de la relacion con clientes. Clientes potenciales
+
+
+Sistema Correo Calendario y contactos 
+Permiten compartir y gestionar contactos, citas,etc..
+Google Apps, Exchange, Lotus, Zimbra
+
+
+eCommerce
+Comercio electronico
+Prestashop, Magento
+
+CMS = Content Management Sistem
+WCM = Web content Managenement
+
+joomla, drupal, wordpress
+
+ECM = Enterprise Content Management
+Gestion documental.
+Sharepoint, "alfresco"
+
+
+

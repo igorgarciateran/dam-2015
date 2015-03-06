@@ -26,3 +26,12 @@ Sharepoint, "alfresco"
 
 
 
+
+
+
+
+
+Pouchdb.com = para no preocuparte de la BD que utilizas?????
+
+
+

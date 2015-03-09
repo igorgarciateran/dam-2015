@@ -42,6 +42,8 @@ APP.DB = (function() {
 
     var insert = function(tweet) {
         var sql = 'insert into tweets values (?,?,?,?)';
+        //executesql (sql, parametros, funcion si mal)
+        //si ok => 
         db.transaction(function(tx) {
             tx.executeSql(sql, [tweet.id, tweet.text, tweet.autor, tweet.fecha], function(tx, results) {
                 console.log('ha insertado el tweet');

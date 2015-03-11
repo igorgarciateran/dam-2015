@@ -1,0 +1,10 @@
+Modulos necesarios:
+
+geolocalizacion
+ajax
+BD
+
+
+
+
+Definir las pantallas. Cada pantalla tendra su controller

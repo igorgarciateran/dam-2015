@@ -15,10 +15,12 @@
 <body>
     <div class="wrapper ">
         <h1 class="h2">
-			<div class="well " ng-controller=TodoController>
+        <div class="col-xs-4"></div>
+         <div class="col-xs-4" >
+         		<div class="well " ng-controller=TodoController>
 				<form action="#" class="form-inline" ng-submit=addTodo()>
 						<div class=" form-group">
-							<input type="text" class="form-control" ng-model=inputText size="40" >
+							<input type="text" class="form-control" ng-model=inputText size="34px" >
 							<button type="submit" class="btn btn-primary">
 								<span class="glyphicon glyphicon-plus" aria-hidden=></span>
 							</button>
@@ -28,6 +30,10 @@
 						<li ng-repeat="todo in todos"> <input type="checkbox" ng-model="todo.done"><span>{{todo.task}}</span></li>
 					</ul>
 			</div>
+
+         </div>
+		
+			 <div class="col-xs-4"></div>
 		</h1>
     </div>
 

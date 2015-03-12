@@ -27,7 +27,8 @@
 						</div>
 				</form>
 					<ul class="list-unstyled">
-						<li ng-repeat="todo in todos"> <input type="checkbox" ng-model="todo.done"><span>{{todo.task}}</span></li>
+						<li ng-repeat="todo in todos"> <input type="checkbox" ng-model="todo.done"><span>{{todo.task}}</span> 
+						<span ng-click="deleteTodo">X</span>  </li>
 					</ul>
 			</div>
 

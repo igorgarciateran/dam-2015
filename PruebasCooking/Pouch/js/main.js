@@ -130,9 +130,9 @@
 
 
     var Meter = function() {
-        Receta.idReceta = textId.value;
-        Receta.nombreReceta = texto.value;
-        insertar(Receta);
+        Platos.idPlato = textId.value;
+        Platos.Nombre = texto.value;
+        insertar(Platos);
     };
 
 

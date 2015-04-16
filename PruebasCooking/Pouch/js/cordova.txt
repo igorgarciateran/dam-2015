@@ -1,0 +1,26 @@
+instalar cordova y phonegap. Es lo mismo, una gratis y otra de pago.
+
+
+
+empaqueta nuestras aplicaciones para crear un apk de androiid.
+
+se puede instalar un app en el movil de phonegap, para probar las aplicaciones.
+se enciende un servidor en phonegap y te conectas con una IP desde la aplicacion.
+
+phonegap serve
+
+
+
+ionic run = en el dispositivo
+ionic emulate = en el emulador
+
+
+
+chrome://inspect/#devices  => muestra los dispositivos conectados, y las webs que se estan ejecutando y que podremos depurar.
+
+http://plugins.cordova.io/#/
+cuando necesitamos acceso a camara/sensores del movil desde aplicaciones web, utilizamos estos plugins.
+
+phonegap install plugin org.apache.cordova.camera
+
+ionic platform add browser 

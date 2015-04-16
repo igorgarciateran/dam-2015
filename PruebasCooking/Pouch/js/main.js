@@ -1,7 +1,7 @@
-(function() {
+window.onload = (function() {
 
     var db;
-    var Nombre = 'pruebax11';
+    var Nombre = 'pruebax12';
 
     var textId = document.getElementById("id");
     var BotInsertar = document.getElementById("insertar");
@@ -9,11 +9,17 @@
     var BotLeer = document.getElementById("leer");
     var texto = document.getElementById("texto");
 
+
+
+   /*
+
     var Receta = {
         idReceta: 3,
         nombreReceta: 'pepinillos en almibar3',
         foto: ''
     };
+
+    */
 
     var ddoc = {
         _id: '_design/index',
@@ -37,7 +43,7 @@
 
 
 
-
+    //inicializa la BD
     var init = function(success) {
         if (db === undefined) {
             db = new PouchDB(Nombre);
@@ -45,7 +51,7 @@
         }
     };
 
-
+    //inserta en la BD lo que sea
     var insertar = function(Dato) {
         //console.log(Dato);
         db.post(Dato, function(err, result) {
@@ -130,9 +136,11 @@
 
 
     var Meter = function() {
-        Platos.idPlato = textId.value;
-        Platos.Nombre = texto.value;
-        insertar(Platos);
+        
+        Platosx.idPlato = textId.value;
+        Platosx.Nombre = texto.value;
+
+        insertar(Platosx);
     };
 
 
@@ -150,7 +158,6 @@
          Datos.nombre = ' cuarta';
          Datos.fecha=new Date().toISOString();
          insertar(Datos);/* */
-
     };
 
 

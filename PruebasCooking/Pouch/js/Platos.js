@@ -1,5 +1,5 @@
 var Platos = {
-    idPlato: 1,
+    _id: 1,
     Nombre: 'nombre Del Plato',
     Foto: ''
 };

@@ -11,60 +11,29 @@ window.onload = (function() {
 
 
 
-   /*
 
-    var Receta = {
-        idReceta: 3,
-        nombreReceta: 'pepinillos en almibar3',
-        foto: ''
-    };
-
-    */
-
-    var ddoc = {
-        _id: '_design/index',
-        views: {
-            index: {
-                map: function mapFun(doc) {
-                    if (doc.idReceta) {
-                        emit(doc.idReceta, doc.nombreReceta);
-                    }
-                }.toString()
-            },
-            otraDiferente: {
-                map: function mapfun2(doc) {
-                    if (doc.nombreReceta) {
-                        emit(doc.idreceta, doc.nombreReceta);
-                    }
-                }
-            }
-        }
-    };
+var insertar3 =function(Dato){
+    //init();
+    //db.put(Dato);
+    baseDatos.insertarOtro(Dato);
+};
 
 
-
-    //inicializa la BD
-    var init = function(success) {
-        if (db === undefined) {
-            db = new PouchDB(Nombre);
-            console.log(db);
-        }
-    };
-
+/*
     //inserta en la BD lo que sea
     var insertar = function(Dato) {
         //console.log(Dato);
-        db.post(Dato, function(err, result) {
+        db.put(Dato,null,null,null, function(err, result) {
             if (!err) {
                 console.log('Successfully posted :' + Dato.nombre);
                 console.log(Dato);
             } else {
-                console.log(err + '   ' + Dato.nombre);
+                console.log(err + '   ' +result + '     ' + Dato.nombre);
             }
         });
 
     };
-
+*/
     /*  var Modificar = function(Dato, Rev) {
           db.put(DatoRev);
 
@@ -86,7 +55,7 @@ window.onload = (function() {
         });
     };
 
-
+/*
 
     var Vista = function() {
         // save the design doc
@@ -133,14 +102,14 @@ window.onload = (function() {
             console.log(response);
         });
     };
-
+*/
 
     var Meter = function() {
-        
+        Platosx._id=textId.value;
         Platosx.idPlato = textId.value;
         Platosx.Nombre = texto.value;
 
-        insertar(Platosx);
+        baseDatos.insertar(Platosx);
     };
 
 
@@ -161,7 +130,8 @@ window.onload = (function() {
     };
 
 
-    init();
+   baseDatos.init();
+   console.log(baseDatos.db);
 
 
     BotInsertar.addEventListener('click', Meter, 'false');
@@ -178,5 +148,52 @@ window.onload = (function() {
 
     //Busqueda(Datos);
     BusquedaVista();
+
+
+
+
+
+
+
+
+/*
+    var ddoc = {
+        _id: '_design/index',
+        views: {
+            index: {
+                map: function mapFun(doc) {
+                    if (doc.idReceta) {
+                        emit(doc.idReceta, doc.nombreReceta);
+                    }
+                }.toString()
+            },
+            otraDiferente: {
+                map: function mapfun2(doc) {
+                    if (doc.nombreReceta) {
+                        emit(doc.idreceta, doc.nombreReceta);
+                    }
+                }
+            }
+        }
+    };
+
+*/
+/*
+    //inicializa la BD
+    var init = function(success) {
+        baseDatos.init();
+        if (db === undefined) {
+            db = new PouchDB(Nombre);
+            console.log( "A");
+            console.log( db);
+        }
+    };
+
+*/
+
+
+
+
+
 
 }());

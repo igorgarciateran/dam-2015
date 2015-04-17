@@ -8,3 +8,19 @@ BD
 
 
 Definir las pantallas. Cada pantalla tendra su controller
+
+
+
+
+Hacer una defensa del proyecto. Y hasta donde hemos llegado.
+
+Que queriamos hacer.
+Que arquitectura tiene( bases de datos local, distribuida,etc...)
+
+
+tecnologias
+
+gestion del proyecto.
+
+retrospectiva de los errores
+
